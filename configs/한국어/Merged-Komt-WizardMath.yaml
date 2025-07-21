@@ -1,0 +1,11 @@
+model:
+  target: evomerge.KoCausalLMWithvLLM  # 또는 CausalLMWithTransformers
+  params:
+    model_path: kooksunho/Merged-Komt-WizardMath
+    model_kwargs:
+      dtype: bfloat16
+    template: ko-alpaca-cot
+  
+eval:
+  target: evomerge.eval.KoMGSM
+

@@ -1,0 +1,11 @@
+model:
+  target: evomerge.CausalLMWithvLLM  # 또는 CausalLMWithTransformers
+  params:
+    model_path: kooksunho/Merged-Shisa-gamma-WizardMath
+    model_kwargs:
+      dtype: bfloat16
+    template: ja-alpaca-cot
+  
+eval:
+  target: evomerge.eval.JaMGSM
+

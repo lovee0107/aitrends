@@ -1,0 +1,11 @@
+model:
+  target: evomerge.CausalLMWithvLLM  # 또는 CausalLMWithTransformers
+  params:
+    model_path: /home/lkk123/kook/Aitrends_Team2/merged_model/중국어_cma
+    model_kwargs:
+      dtype: bfloat16
+    template: zh-alpaca-cot
+  
+eval:
+  target: evomerge.eval.ZhMGSM
+
